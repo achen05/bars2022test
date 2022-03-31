@@ -200,7 +200,15 @@ body {
   }
 
   .all-together-svg {
-    margin: 64px;
+    margin: 36px;
+  }
+
+  .title-text {
+    width: 100%;
+    text-align: center;
+    font-family: Junicode-BoldCondensed;
+    font-size: 96px;
+    font-weight: normal;
   }
 
   .info-container {
