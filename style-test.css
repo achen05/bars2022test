@@ -1,0 +1,115 @@
+@font-face {
+  font-family: Junicode-BoldCondensed;
+  src: url("fonts/Junicode-BoldCondensed.ttf");
+}
+
+@font-face {
+  font-family: texgyreheroscn;
+  src: url("fonts/texgyreheroscn-regular.otf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px dotted blue;
+  color: white;
+  background-color: black;
+}
+
+.website-container {
+  height: inherit;
+}
+
+.column-container {
+  display: flex;
+  height: 100%;
+}
+
+.column {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.title-column {
+  height: 100vh;
+  position: sticky;
+  top: 0px;
+  border-right: 1px solid white;
+}
+
+.content-column  {
+  height: 100vh;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.all-together {
+  margin: 36px;
+  margin-top: auto;
+  filter:
+}
+
+
+
+.info-container {
+  margin: 16px;
+  display: flex;
+  width: 100%;
+}
+
+.info-column {
+  width: 50%;
+  font-family: texgyreheroscn;
+}
+
+.subheader-text {
+  text-align: center;
+  font-size: 36px;
+  margin: 40px;
+}
+
+.link-container {
+  width: 100%;
+  position: sticky;
+  bottom: 0px;
+  margin-top: auto;
+}
+
+.button {
+  display: block;
+  cursor: pointer;
+  padding: 10px 16px;
+  width: inherit;
+  text-align: left;
+  border-top: 1px solid white;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  margin-top: -1px;
+  background-color: transparent;
+  font-family: Junicode-BoldCondensed;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+
+.collapsible-container {
+  width: 100%;
+
+}
+
+.collapsibleContent {
+  max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-out;
+    border-top: 0px;
+    border-bottom: 1px solid white;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: black;
+}

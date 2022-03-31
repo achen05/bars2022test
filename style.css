@@ -1,0 +1,238 @@
+@font-face {
+  font-family: Junicode-BoldCondensed;
+  src: url("fonts/Junicode-BoldCondensed.ttf");
+}
+
+@font-face {
+  font-family: Junicode-RegularCondensed;
+  src: url("fonts/Junicode-RegularCondensed.ttf");
+}
+
+@font-face {
+  font-family: texgyreheroscn;
+  src: url("fonts/texgyreheroscn-regular.otf");
+}
+
+html{
+  max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  border: 0px solid blue;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+     }
+}
+
+.website-container {
+  display: flex;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  max-width: 1200px;
+}
+
+.column {
+  width: 50%;
+}
+
+.title-column {
+  height: 100vh;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid;
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.all-together-svg {
+  margin: 0px 52px 0px 52px;
+  margin-top: auto;
+}
+
+.title-text {
+  width: 100%;
+  text-align: center;
+  font-family: Junicode-BoldCondensed;
+  font-size: 140px;
+}
+
+.info-container {
+  margin: 16px 20px;
+  display: flex;
+  font-size: 16px;
+  font-family: texgyreheroscn;
+}
+
+.subheader-text {
+  font-size: 40px;
+  font-family: Junicode-RegularCondensed;
+  text-align: center;
+  line-height: 40px;
+  margin: 56px;
+  margin-top: 22%;
+
+}
+
+.link-container {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  max-width: 568px;
+}
+
+
+.button {
+  display: block;
+  cursor: pointer;
+  padding: 10px 16px;
+  width: 100%;
+  text-align: left;
+  border-top: 1px solid;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  margin-top: -1px;
+  background-color: transparent;
+  font-family: Junicode-BoldCondensed;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.collapsible-content {
+  max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    border-top: 0px;
+    border-bottom: 1px solid;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.collapsible-image {
+  width: 50%;
+  height: 400px;
+  object-fit: cover;
+  border: 1px solid;
+}
+
+.collapsible-text {
+  margin-bottom: 20px;
+  font-family: texgyreheroscn;
+
+}
+
+.caption-text {
+  width: 100%;
+  text-align: center;
+  font-family: texgyreheroscn;
+  visibility: hidden;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+
+  html, body{
+    max-width: 100%;
+      overflow-x: hidden;
+  }
+
+  .website-container {
+    display: block;
+    width: 100%;
+    border-left: 0px;
+    border-right: 0px;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .title-column {
+    height: 100vh;
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 0px solid;
+  }
+
+  .content-column {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin-bottom: 132px;
+  }
+
+  .all-together-svg {
+    margin: 64px;
+  }
+
+  .info-container {
+    margin: 16px;
+    display: flex;
+    font-size: 12px;
+    font-family: texgyreheroscn;
+  }
+
+  .subheader-text {
+    font-size: 32px;
+    font-family: Junicode-RegularCondensed;
+    text-align: center;
+    line-height: 32px;
+    margin: 32px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+
+  }
+
+  .link-container {
+    display: block;
+    width: 100%;
+    position: sticky;
+    bottom: 0px;
+    background-color: black;
+    max-width: 100%;
+  }
+
+  .caption-text {
+    margin-top: 100px;
+    font-family: texgyreheroscn;
+    visibility: visible;
+  }
+
+}
