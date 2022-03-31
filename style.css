@@ -79,8 +79,8 @@ body {
 .title-text {
   width: 100%;
   text-align: center;
-  font-family: Junicode-BoldCondensed;
-  font-size: 140px;
+  font-family: texgyreheroscn;
+  font-size: 100px;
   font-weight: normal;
 }
 
@@ -204,11 +204,7 @@ body {
   }
 
   .title-text {
-    width: 100%;
-    text-align: center;
-    font-family: Junicode-BoldCondensed;
     font-size: 96px;
-    font-weight: normal;
   }
 
   .info-container {
